@@ -8,4 +8,4 @@ theme:
 # This allows you to organize your pages in the sidebar
 nav:
   - Home: index.md
-  - Guide: guide.md # You will need to create this file in the docs/ folder
+  - Introduction: introduction.md # You will need to create this file in the docs/ folder
