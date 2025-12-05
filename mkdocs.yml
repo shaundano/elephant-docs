@@ -1,11 +1,38 @@
 site_name: Project Elephant Documentation
+
 theme:
   name: material
-  palette: 
-    primary: teal
-    accent: purple
 
-# This allows you to organize your pages in the sidebar
+  features:
+    - navigation.sections      
+    - search.suggest           
+    - search.highlight         
+    - content.code.copy       
+    - content.tooltips         
+  
+  palette: 
+    - scheme: default
+      primary: teal            
+      accent: blue             
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: teal
+      accent: blue 
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition                 
+  - pymdownx.details          
+  - pymdownx.superfences       
+  - attr_list                 
+  - pymdownx.tabbed:           
+      alternate_style: true 
+
 nav:
   - Home: index.md
   - Introduction:
